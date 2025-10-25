@@ -1,0 +1,87 @@
+.pet-details{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 5px; 
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pet-details__image{
+  width: 400px;
+  height: 320px;
+  border-radius: 10px;
+}
+
+.pet-details__name{
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.pet-details__info{
+  color: #333;
+}
+
+.pet-details__info span{
+  font-weight: bold;
+}
+
+.pet-details__description{
+  color: #333;
+  margin-top: 15px;
+}
+
+.pet-details__button{
+  margin: 12px 0 16px;
+  background-color: #ff8c42;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.pet-details__button:hover{
+  background-color: #ffa05d;
+}
+
+
+.pet-details__back{
+  color: #333;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+
+.pet-details {
+  padding: 15px;
+  gap: 10px;
+}
+
+.pet-details__image {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
+.pet-details__name {
+  font-size: 24px;
+}
+
+.pet-details__info,
+.pet-details__description {
+  font-size: 14px;
+  text-align: center;
+}
+
+.pet-details__button {
+  padding: 6px 12px;
+  font-size: 14px;
+  }
+}

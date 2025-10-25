@@ -1,12 +1,31 @@
-# React + Vite
+# project-name-frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O AdoteAmigo é um site desenvolvido para conectar pessoas que desejam adotar com ONGs e protetores independentes.
+Aqui, é possível conhecer cães e gatos prontos para ganhar um lar acolhedor e cheio de carinho.
 
-Currently, two official plugins are available:
+O projeto tem como objetivo promover o bem-estar animal e incentivar a adoção responsável, mostrando que cada bichinho merece uma nova chance e muito amor.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#Funcionalidades
 
-## Expanding the ESLint configuration
+-Listagem de pets disponíveis para adoção
+-Busca por nome dos pets
+-Página de uma galeria de pets que já foram adotados
+-Modal de adoção com mensagem personalizada
+-Layout responsivo
+-Preloader animado durante o carregamento de dados
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+#Tecnologias utilizadas
+
+React.js — construção da interface e navegação
+HTML e CSS — estrutura e estilização
+JavaScript — lógica e interatividade
+Vite — ambiente de desenvolvimento
+
+APIs externas:
+
+Dog CEO API
+The Cat API
+
+
+
+

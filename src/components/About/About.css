@@ -1,0 +1,57 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;    
+  text-align: center;
+  min-height: calc(100vh - 160px);
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about__paragraph {
+  font-size: 16pz;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about__logo-heart {
+  width: 60px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.about__back{
+  color: #333;
+  text-decoration: none;
+  margin-top: 50px;
+}
+@media (max-width: 768px) {
+  .about {
+    min-height: auto;
+    padding: 60px 20px;
+  }
+
+  .about__title {
+    font-size: 28px;
+  }
+
+  .about__paragraph {
+    font-size: 16px;
+  }
+
+  .about__logo-heart {
+    width: 50px;
+  }
+}
+
+

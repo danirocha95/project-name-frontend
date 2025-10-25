@@ -1,0 +1,196 @@
+.header {
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.header__logo-img {
+  width: 45px;
+  height: 45px;
+}
+
+.header__logo h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  color:#555;
+}
+
+.header__logo h1 span {
+  color: #ff8c42;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.header__nav a:focus {
+  text-decoration: underline  #ff8c42;
+  color: #ff8c42;
+}
+
+.header__nav a:active {
+  color: #ff8c42;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.header__buttons button {
+  background-color: transparent;
+  border: 2px solid #ff8c42;
+  color: #ff8c42;
+  padding: 18px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header__buttons button:hover {
+  background-color: #ff8c42;
+  color: #fff;
+}
+
+.header__welcome-img{
+  width: 24px;
+  height: 24px;
+}
+
+.header__hamburger-button {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0;
+  border-radius: 0 !important;
+  z-index: 1000; 
+  display: none;
+}
+
+.header__close-menu{
+  display: none;
+}
+
+.header__mobile-logout {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+
+ .header{
+  padding: 12px;
+ }
+
+  .header__logo-img {
+    width: 30px;
+    height: 30px;
+ }
+
+  .header__logo h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    color:#555;
+ }
+
+ .header__buttons button{
+  padding: 10px 15px;
+ }
+
+ .header__buttons button:not(.header__hamburger-button):not(.register-modal__submit) {
+  display: none;
+ }
+
+.header__hamburger-button{
+  display: block;
+ }
+ .header__hamburger-icon{
+    width:24px;
+    height:24px;
+    object-fit: contain;
+    display: block;
+ }  
+
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 260px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -2px 0 12px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 80px;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+ }
+
+  .header__nav.open {
+    right: 0;
+ }
+
+  .header__nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+ }
+
+  .header__mobile-logout {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+ }
+
+.header__mobile-logout button {
+    width: 80%;
+    padding: 12px 0;
+    border: 2px solid #ff8c42;
+    border-radius: 30px;
+    color: #ff8c42;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+ }
+
+.header__mobile-logout button:hover {
+    background-color: #ff8c42;
+    color: #fff;
+ }
+
+}
+

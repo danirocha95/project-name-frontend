@@ -1,0 +1,69 @@
+.adopt-modal__overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.adopt-modal__overlay.closing {
+  opacity: 0;
+}
+
+.adopt-modal {
+  background: #fff;
+  padding-top: 80px;
+  border-radius: 30px;
+  text-align: center;
+  max-width: 400px;
+  height: 250px;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+.adopt-modal__close-button{
+  background: none;
+  border: 1px #CFCFCF;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  cursor: pointer;
+}
+
+.adopt-modal__close-icon {
+  width: 20px;
+  height: 20px;
+}
+.adopt-modal__close-icon:hover{
+  border-radius: 2px;
+  background-color: #777676;
+}
+.adopt-modal__success {
+  font-size: 25px;
+  color: #333;
+  font-size: bold;
+  font-weight: 700;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 500px) {
+
+  .adopt-modal{ 
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+    padding-left: 25px ;
+    padding-right: 25px;
+  }
+
+  .adopt-modal__success h2{
+    font-size: 5px;
+    font-weight: 200;
+  }
+}
